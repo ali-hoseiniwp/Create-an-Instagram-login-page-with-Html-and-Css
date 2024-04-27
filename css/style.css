@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system,
+                 BlinkMacSystemFont,
+                 "Segoe UI",
+                 Roboto,
+                 Oxygen,
+                 Ubuntu,
+                 Cantarell,
+                 "Open Sans",
+                 "Helvetica Neue",
+                 sans-serif;
+             
+  }
+  /* -------------start container ------------------ */
+  .container {
+    width: 70%;
+    margin: 80px auto;
+    /* padding-top: 80px; */
+  }
+  /* -------------start pic-left ------------------ */
+  .pic-left {
+    float: left;
+    width: calc(50% - 20px);
+    text-align: right;
+    margin-right: 40px;
+  }
+
+  .pic-left img{
+    width: 100%;
+    max-width: 385px;
+  } /* -------------end pic-left ------------------ */
+
+  /* -------------start form-right ------------------ */
+  .form-right{
+    float: right;
+    width: calc(50% - 20px);
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .form-box {
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 0 40px;
+    border-radius: 2px;
+  }
+
+  .header-form img{
+    width: 174px;
+    height: 50px;
+    margin: 40px auto;
+   
+  }
+  .content-form {
+    width: 100%;
+
+  }
+
+  .form-content input, button, a{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin: 5px auto;
+  }
+  
+input[type="text"],
+input[type="password"]:focus {
+    outline: 0;
+  }
+
+  input[type="text"]{
+    margin-top: 0;
+  }
+
+  .form-content input{
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 2px;
+  }
+
+  ::placeholder{
+    font-size: 12px;
+    color: rgb(115, 115, 115);
+  }
+
+  .form-content button{
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #4CB5F9;
+    font-size: 14px;
+    font-weight: 600;
+    height: 35px;
+  }
+
+  .form-content a{
+    color: #00376B;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 12px auto;
+    height: auto;
+  } /* -------------end form-right ------------------ */
+
+  /* -------------start sign-up ------------------ */
+  .sign-up {
+    width: 100%;
+    max-width: 350px;
+    border: 1px solid rgb(219, 219, 219);
+    padding: 20px 40px;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.sign-up span{
+    color: #0095F6;
+} /* -------------end sign-up ------------------ */
+
+/* -------------start get-app ------------------ */
+.get-app{
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+.title-app{
+    margin: 20px;
+}
+
+.app-links a{
+    display: inline;
+    text-decoration: none;
+}
+
+.app-links img{
+    height: 43px;
+} /* -------------end get-app ------------------ */
+/* --------------------end container ---------------------- */
+
+/* -------------------start footer --------------------- */
+.footer {
+    width: 70%;
+    margin: 50px auto;
+    clear: both;
+    padding-top: 50px;
+}
+
+/* -------------start footer-links ------------------ */
+.footer-links{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.footer-links a{
+    display: inline;
+    text-decoration: none;
+    color: rgb(115, 115, 115);
+    padding: 15px;
+    line-height: 30px;   
+} /* -------------end footer-links ------------------ */
+
+/* ------------start footer-copyright -------------- */
+.footer-copyright{
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    color: rgb(115, 115, 115);
+}
+
+.left-copyright{
+    width: 45%;
+    text-align: right;
+    float: left;
+    padding-right: 30px;
+}
+.left-copyright select{
+    display: inline;
+    border: none;
+    color: rgb(115, 115, 115);
+    width: 80px;
+    outline: none;
+}
+
+.right-copyright {
+    width: 55%;
+    float: left;
+    text-align: left;
+} /* ------------end footer-copyright -------------- */
+/* -------------------end footer --------------------- */
+
+@media screen and (max-width:950px),
+        screen and (min-width:768px) {
+    
+    .form-box{
+        padding: 0 25px;
+    }
+
+    .sign-up{
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .app-links img{
+        height: 35px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .pic-left{
+        display: none;
+    }
+
+    .form-right{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .form-box{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sign-up{
+        width: 100%;
+        max-width: 100%;
+    }
+    .get-app{
+        width: 100%;
+        max-width: 100%;
+    }
+    .app-links img{
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .container{
+        width: 90%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .footer{
+        width: 90%;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .header-form img{
+        margin: 30px auto;
+    }
+
+
+}
